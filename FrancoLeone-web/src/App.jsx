@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import About from './components/About.jsx'
 import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
 import Hero from './components/Hero.jsx'
@@ -18,6 +19,7 @@ function App() {
         <Education language={language} />
         <Stack language={language} />
         <Projects language={language} />
+        <About language={language} />
       </main>
     </>
   )
