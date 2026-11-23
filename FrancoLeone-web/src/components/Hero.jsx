@@ -23,7 +23,7 @@ function Hero({ language = 'es' }) {
   const text = content[language === 'en' ? 'en' : 'es']
 
   return (
-    <main className="flex-1 px-4 pb-8 pt-4 sm:px-7 sm:pt-6">
+    <div className="px-4 pb-8 pt-4 sm:px-7 sm:pt-6">
       <section
         className="flex min-h-[400px] flex-col items-center justify-center rounded-[28px] border border-[#e5e4e7] px-5 py-14 text-center sm:min-h-[470px] sm:px-10"
         aria-labelledby="hero-title"
@@ -66,7 +66,7 @@ function Hero({ language = 'es' }) {
           {text.aboutLink}
         </a>
       </section>
-    </main>
+    </div>
   )
 }
 
