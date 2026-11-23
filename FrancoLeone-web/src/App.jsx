@@ -3,6 +3,7 @@ import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
 import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
+import Projects from './components/Projects.jsx'
 import Stack from './components/Stack.jsx'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Experience language={language} />
         <Education language={language} />
         <Stack language={language} />
+        <Projects language={language} />
       </main>
     </>
   )
