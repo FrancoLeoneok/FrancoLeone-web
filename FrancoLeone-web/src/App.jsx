@@ -3,6 +3,7 @@ import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
 import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
+import Stack from './components/Stack.jsx'
 
 function App() {
   const [language, setLanguage] = useState('es')
@@ -14,6 +15,7 @@ function App() {
         <Hero language={language} />
         <Experience language={language} />
         <Education language={language} />
+        <Stack language={language} />
       </main>
     </>
   )
