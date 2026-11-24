@@ -18,7 +18,7 @@ const navigation = {
 const socialLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com/',
+    href: 'https://github.com/FrancoLeoneok',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
@@ -30,7 +30,7 @@ const socialLinks = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/',
+    href: 'https://www.linkedin.com/in/franco-leone-b821b634a/',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
@@ -42,7 +42,7 @@ const socialLinks = [
   },
   {
     label: 'Reddit',
-    href: 'https://www.reddit.com/',
+    href: 'https://www.reddit.com/user/FLdds/',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
