@@ -15,12 +15,12 @@ function Footer({ language = 'es' }) {
 
   return (
     <footer className="px-5 pb-5 pt-4 sm:px-10 sm:pb-7">
-      <div className="mx-auto flex w-full max-w-[980px] items-center justify-between gap-4 border-t border-[#e5e4e7] pt-5 text-left">
-        <p className="text-xs text-[#6b6375]">
+      <div className="mx-auto flex w-full max-w-[980px] items-center justify-between gap-4 border-t border-[#302d28] pt-5 text-left">
+        <p className="text-xs text-[#b8b2a8]">
           © {year} Franco López Leone
         </p>
         <a
-          className="inline-flex items-center gap-2 text-xs text-[#4b4a47] no-underline transition-colors hover:text-[#92713a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700 motion-reduce:transition-none"
+          className="inline-flex items-center gap-2 text-xs text-[#d0cbc1] no-underline transition-colors hover:text-[#d6b66f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 motion-reduce:transition-none"
           href="#top"
           aria-label={text.backToTopLabel}
         >
