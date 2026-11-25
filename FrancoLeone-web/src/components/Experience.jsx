@@ -14,16 +14,16 @@ function Experience({ language = 'es' }) {
 
   return (
     <section
-      className="scroll-mt-24 border-t border-[#e5e4e7] px-5 py-14 sm:px-10 sm:py-16"
+      className="scroll-mt-24 border-t border-[#302d28] px-5 py-14 sm:px-10 sm:py-16"
       id="experience"
       aria-labelledby="experience-title"
     >
       <div className="mx-auto w-full max-w-[980px] text-left">
-        <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#92713a] sm:text-xs">
+        <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#d6b66f] sm:text-xs">
           {text.eyebrow}
         </p>
         <h2
-          className="m-0 text-2xl font-medium tracking-[-0.035em] text-[#171717] sm:text-[28px]"
+          className="m-0 text-2xl font-medium tracking-[-0.035em] text-[#f3f0e8] sm:text-[28px]"
           id="experience-title"
         >
           {text.title}

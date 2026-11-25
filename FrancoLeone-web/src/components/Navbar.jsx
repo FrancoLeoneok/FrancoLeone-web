@@ -65,12 +65,12 @@ function Navbar({ language = 'es', onLanguageChange = () => {} }) {
 
   return (
     <header
-      className="sticky top-0 z-10 w-full border-b border-[#e8e5df] bg-white/95 backdrop-blur-[14px]"
+      className="sticky top-0 z-10 w-full border-b border-[#302d28] bg-[#101010]/95 backdrop-blur-[14px]"
       id="top"
     >
-      <div className="mx-auto flex min-h-[76px] w-full items-center justify-between gap-6 px-7 text-[#171717] max-[860px]:min-h-[68px] max-[860px]:px-5">
+      <div className="mx-auto flex min-h-[76px] w-full items-center justify-between gap-6 px-7 text-[#f3f0e8] max-[860px]:min-h-[68px] max-[860px]:px-5">
         <a
-          className="inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap text-[15px] font-semibold tracking-[-0.035em] text-inherit no-underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700"
+          className="inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap text-[15px] font-semibold tracking-[-0.035em] text-inherit no-underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300"
           href="#top"
           aria-label="FrancoLeone - ir al inicio"
           onClick={() => setMenuOpen(false)}
@@ -84,20 +84,20 @@ function Navbar({ language = 'es', onLanguageChange = () => {} }) {
         </a>
 
         <button
-          className="hidden size-[38px] shrink-0 cursor-pointer flex-col justify-center gap-[5px] rounded-lg border border-[#e8e5df] bg-transparent p-[9px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700 max-[860px]:flex"
+          className="hidden size-[38px] shrink-0 cursor-pointer flex-col justify-center gap-[5px] rounded-lg border border-[#3b3832] bg-transparent p-[9px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 max-[860px]:flex"
           type="button"
           aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
           aria-expanded={menuOpen}
           aria-controls="navbar-actions"
           onClick={() => setMenuOpen((isOpen) => !isOpen)}
         >
-          <span className="h-[1.5px] w-full bg-[#171717]" />
-          <span className="h-[1.5px] w-full bg-[#171717]" />
-          <span className="h-[1.5px] w-full bg-[#171717]" />
+          <span className="h-[1.5px] w-full bg-[#f3f0e8]" />
+          <span className="h-[1.5px] w-full bg-[#f3f0e8]" />
+          <span className="h-[1.5px] w-full bg-[#f3f0e8]" />
         </button>
 
         <div
-          className={`flex items-center gap-[clamp(18px,2.4vw,36px)] max-[860px]:absolute max-[860px]:left-0 max-[860px]:right-0 max-[860px]:top-[calc(100%+1px)] max-[860px]:items-start max-[860px]:flex-col max-[860px]:gap-5 max-[860px]:border-b max-[860px]:border-[#e8e5df] max-[860px]:bg-white max-[860px]:p-5 max-[860px]:shadow-[0_12px_20px_rgba(23,23,23,0.06)] ${menuOpen ? 'max-[860px]:flex' : 'max-[860px]:hidden'}`}
+          className={`flex items-center gap-[clamp(18px,2.4vw,36px)] max-[860px]:absolute max-[860px]:left-0 max-[860px]:right-0 max-[860px]:top-[calc(100%+1px)] max-[860px]:items-start max-[860px]:flex-col max-[860px]:gap-5 max-[860px]:border-b max-[860px]:border-[#302d28] max-[860px]:bg-[#151515] max-[860px]:p-5 max-[860px]:shadow-[0_12px_20px_rgba(0,0,0,0.35)] ${menuOpen ? 'max-[860px]:flex' : 'max-[860px]:hidden'}`}
           id="navbar-actions"
         >
           <nav
@@ -106,7 +106,7 @@ function Navbar({ language = 'es', onLanguageChange = () => {} }) {
           >
             {navigation[activeLanguage].map(({ label, href }) => (
             <a
-              className="whitespace-nowrap text-[13px] font-medium text-[#4b4a47] no-underline transition-colors hover:text-[#a77c25] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700 motion-reduce:transition-none max-[860px]:text-sm"
+              className="whitespace-nowrap text-[13px] font-medium text-[#c5c0b6] no-underline transition-colors hover:text-[#d6b66f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 motion-reduce:transition-none max-[860px]:text-sm"
               key={href}
               href={href}
               onClick={() => setMenuOpen(false)}
@@ -119,7 +119,7 @@ function Navbar({ language = 'es', onLanguageChange = () => {} }) {
           <div className="flex items-center gap-[14px]" aria-label="Redes sociales">
           {socialLinks.map(({ label, href, icon }) => (
             <a
-              className="size-[19px] text-[#4b4a47] transition-[color,transform] hover:-translate-y-px hover:text-[#a77c25] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700 motion-reduce:transition-none"
+              className="size-[19px] text-[#c5c0b6] transition-[color,transform] hover:-translate-y-px hover:text-[#d6b66f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 motion-reduce:transition-none"
               key={label}
                 href={href}
                 aria-label={label}
@@ -132,12 +132,12 @@ function Navbar({ language = 'es', onLanguageChange = () => {} }) {
           </div>
 
           <div
-            className="flex items-center gap-[7px] border-l border-[#dedbd4] pl-[18px] max-[860px]:border-l-0 max-[860px]:border-t max-[860px]:border-[#dedbd4] max-[860px]:pl-0 max-[860px]:pt-4"
+            className="flex items-center gap-[7px] border-l border-[#3b3832] pl-[18px] max-[860px]:border-l-0 max-[860px]:border-t max-[860px]:border-[#3b3832] max-[860px]:pl-0 max-[860px]:pt-4"
             aria-label="Seleccionar idioma"
           >
             {['es', 'en'].map((option) => (
               <button
-                className={`cursor-pointer border-0 bg-transparent px-0.5 py-1 text-[11px] font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700 motion-reduce:transition-none ${activeLanguage === option ? 'text-[#171717]' : 'text-[#85827c] hover:text-[#171717]'}`}
+                className={`cursor-pointer border-0 bg-transparent px-0.5 py-1 text-[11px] font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 motion-reduce:transition-none ${activeLanguage === option ? 'text-[#f3f0e8]' : 'text-[#918c82] hover:text-[#f3f0e8]'}`}
                 key={option}
                 type="button"
                 aria-pressed={activeLanguage === option}
